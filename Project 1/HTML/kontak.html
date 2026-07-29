@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak Promo Kamera</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">CameraAds</div>
+        <div class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="mainweb.html">Overview</a>
+            <a href="webcanon.html">Canon</a>
+            <a href="websony.html">Sony</a>
+            <a href="kontak.html" class="active-link">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Header Kontak -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Tertarik dengan kamera Canon atau Sony? Isi form di bawah untuk penawaran spesial.</p>
+        </div>
+    </section>
+
+    <!-- Form Kontak -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Form Kontak</h2>
+            <p>
+                Beritahu kami kebutuhan fotografi Anda, tim kami akan merekomendasikan kamera terbaik
+                sesuai budget dan keperluan.
+            </p>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@contoh.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="brand">Pilihan Brand</label>
+                        <select id="brand" name="brand">
+                            <option value="canon">Canon</option>
+                            <option value="sony">Sony</option>
+                            <option value="belum-pasti">Belum pasti, minta rekomendasi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="telepon">Nomor Telepon</label>
+                        <input type="text" id="telepon" name="telepon" placeholder="08xx-xxxx-xxxx">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Ceritakan kebutuhan kamera Anda..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Kirim</button>
+            </form>
+            <p class="note">
+                *Harga dan stok dapat berubah sewaktu-waktu. Silakan konfirmasi kembali untuk informasi terbaru.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 CameraAds. Halaman kontak promo kamera.</p>
+        </div>
+    </footer>
+</body>
+</html>

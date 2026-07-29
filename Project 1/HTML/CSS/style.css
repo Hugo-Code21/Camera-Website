@@ -1,0 +1,258 @@
+/* RESET DASAR */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* KONTENER UTAMA */
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #111827;
+    color: #f9fafb;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    margin-left: 16px;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+.nav-links .active-link {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* HEADER HALAMAN */
+.page-header {
+    background-color: #111827;
+    color: #f9fafb;
+    padding: 30px 0;
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    font-size: 1.9rem;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    font-size: 0.95rem;
+    color: #e5e7eb;
+}
+
+/* SECTION UMUM */
+.product-section,
+.contact-section {
+    padding: 20px 0 35px 0;
+}
+
+.product-section h2,
+.contact-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.product-section p,
+.contact-section p {
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+/* CARD PRODUK SEDERHANA */
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.product-info {
+    flex: 1 1 300px;
+}
+
+.product-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #4b5563;
+}
+
+.spec-list {
+    list-style: disc;
+    margin-left: 18px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.price {
+    font-weight: 600;
+    margin: 10px 0 14px 0;
+}
+
+/* GAMBAR PRODUK */
+.product-image {
+    flex: 1 1 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* TOMBOL */
+.btn-primary {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+/* FORM KONTAK */
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 12px;
+}
+
+.form-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1 1 250px;
+    margin-bottom: 12px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 0.9rem;
+    color: #111827;
+    background-color: #f9fafb;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.contact-form button {
+    margin-top: 4px;
+}
+
+.note {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 25px;
+    padding: 14px 0;
+    background-color: #e5e7eb;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #4b5563;
+}
+
+/* RESPONSIF */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 8px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        margin-right: 14px;
+    }
+
+    .page-header {
+        padding: 24px 0;
+    }
+
+    .page-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .product-card {
+        padding: 16px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
